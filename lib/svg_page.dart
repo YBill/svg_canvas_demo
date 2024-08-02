@@ -56,7 +56,6 @@ class _SvgPageState extends State<SvgPage> {
       actualColors.add(color);
       colors.add(getLighterColor(color));
     }
-    setState(() {});
   }
 
   Color extractColor(RegExp colorRegex, String? style) {
@@ -79,7 +78,7 @@ class _SvgPageState extends State<SvgPage> {
         }
       }
     }
-    return Colors.transparent; // 默认返回透明色，如果没有匹配到颜色
+    return Colors.transparent;
   }
 
   Color getLighterColor(Color color) {
