@@ -119,6 +119,7 @@ class _SvgPageState extends State<SvgPage> {
           child: Center(
             child: RepaintBoundary(
               child: CustomPaint(
+                isComplex: true,
                 size: Size(svgWidth, svgHeight),
                 painter: MyPainter(draws, colors, scaleFactor),
               ),

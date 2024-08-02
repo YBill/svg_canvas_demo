@@ -8,7 +8,9 @@ class MyPainter extends CustomPainter {
   late Paint _paint;
 
   MyPainter(this.draws, this.colors, this.scaleFactor) {
-    _paint = Paint()..style = PaintingStyle.fill;
+    _paint = Paint()
+      ..isAntiAlias = true
+      ..style = PaintingStyle.fill;
   }
 
   @override
